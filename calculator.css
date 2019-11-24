@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 50px;
+    font-family: "Roboto", sans-serif;
+}
+
+.container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.calculator {
+    height: 500px;
+    width: 300px;
+    background-color: lightcoral;
+    display: grid;
+    grid-template-rows: 16.7% 16.7% 16.7% 16.7% 16.7%;
+    grid-template-columns: 100%;
+    border-radius: 4px;
+    background: linear-gradient(135deg, rgba(150, 135, 19, 0.45) 0%, rgba(217, 135, 19, 0.45) 14.286%, rgba(187, 117, 36, 0.45) 14.286%, rgba(187, 117, 36, 0.45) 28.572%, rgba(156, 100, 53, 0.45) 28.572%, rgba(156, 100, 53, 0.45) 42.858%, rgba(126, 82, 70, 0.45) 42.858%, rgba(126, 82, 70, 0.45) 57.144%, rgba(96, 64, 86, 0.45) 57.144%, rgba(96, 64, 86, 0.45) 71.43%, rgba(65, 47, 103, 0.45) 71.43%, rgba(65, 47, 103, 0.45) 85.716%, rgba(35, 29, 120, 0.45) 85.716%, rgba(35, 29, 120, 0.45) 100.002%), linear-gradient(45deg, #f88a52 0%, #f88a52 14.286%, #d57d61 14.286%, #d57d61 28.572%, #b3706f 28.572%, #b3706f 42.858%, #90637e 42.858%, #90637e 57.144%, #6d568d 57.144%, #6d568d 71.43%, #4b499b 71.43%, #4b499b 85.716%, #283caa 85.716%, #283caa 100.002%);
+}
+
+.flex-container {
+    display: flex;
+    margin-top: 5px;
+    justify-content: space-evenly;
+}
+
+.flex-container-view {
+    display: flex;
+    margin-top: 15px;
+    justify-content: space-evenly;
+}
+
+.view {
+    width: 200px;
+    height: 50px;
+    background-color: #bbbbbb;
+    border-radius: 5px;
+}
+
+.calcBtn {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(90deg, #d45b6a, #ffe07b);
+    text-align: center;
+    padding-top: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+#clear {
+    transform: scale(0.8);
+}
