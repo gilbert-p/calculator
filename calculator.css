@@ -1,5 +1,5 @@
 :root {
-    --main-bg-color: #1A1A1A;
+    --main-bg-color: #25A3DA;
     --num-color: #4F99D9;
 }
 
@@ -10,6 +10,11 @@
     font-weight: bold;
     font-size: 22px;
     color: #ffffff;
+}
+
+body {
+    background: #25A3DA;
+
 }
 
 .title {
@@ -25,15 +30,21 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+
 }
 
 .calculator {
-    height: 500px;
+    position: absolute;
+    height: 550px;
     width: 300px;
-    background-color: var(--main-bg-color);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-image: linear-gradient(to right bottom, #1e1c1e, #222123, #272629, #2b2b2e, #2f3034);
     display: grid;
     grid-template-rows: 16.7% 16.7% 16.7% 16.7% 16.7%;
     grid-template-columns: 100%;
+    border-radius: 10px;
 }
 
 .flex-container {
@@ -49,18 +60,25 @@
 }
 
 .view {
-    width: 95%;;
-    height: 50px;
-    /* background-color: #bbbbbb; */
+    width: 87%;
+    height: 70px;
+    background-color: #A2AF77;
     border-radius: 5px;
-    color: var(--num-color);
-    font-size: 2em;
+    color: black;
+    overflow: hidden;
+}
+
+.text-view {
+    position: relative;
+    padding: 5px;
+    top: 10px;
+    font-size: 1.5em;
 }
 
 .calcBtn {
     width: 60px;
     height: 60px;
-    background-color: #20282E;
+    background-color: #130F10;
     text-align: center;
     padding-top: 17px;
     border-radius: 5px;
@@ -68,12 +86,16 @@
     border-radius: 50%;
 }
 
-.calcBtn:hover{
+.calcBtn:hover {
     background-color: #41515d;
 }
 
 .numBtn {
-    background-color : var(--main-bg-color);
+    background-color: #58595B;
+}
+
+#equals {
+    background-color: #F15A2B;
 }
 
 #clear {
@@ -82,4 +104,23 @@
     border-width: 2px;
     border-color: #ffffff;
     font-size: 15px;
+}
+
+
+/* Mobile Styles */
+@media only screen and (max-width: 420px) {
+
+
+    .calculator {
+        width: 90vw;
+        height: 500px;
+    }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+    body {
+        background-color: #B2D6FF;
+        /* Blue */
+    }
 }
